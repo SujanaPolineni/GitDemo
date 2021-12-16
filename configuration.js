@@ -1,5 +1,5 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['AlertDemo.js'],
+    specs: ['RadioDemo.js'],
     framework: 'jasmine'
 };
