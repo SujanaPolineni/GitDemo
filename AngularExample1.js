@@ -2,7 +2,7 @@ var angularHomepage = require('./AngularHomepage');
 describe('angularjs homepage', function() {
     it('should greet the named user', function() {
        browser.waitForAngularEnabled(false);
-        angularHomepage.get();
+        angularHomepage.get("https://angularjs.org/");
 
         angularHomepage.setName('Sujana');
 
@@ -12,7 +12,7 @@ describe('angularjs homepage', function() {
         expect(angularHomepage.isToDoTextDisplayed()).toBe(true);
         angularHomepage.setAddNewToDoText("Test To Do");
         angularHomepage.getAddButton().click();
-        //browser.sleep(3000);
+        browser.sleep(3000);
 
     });
 });
